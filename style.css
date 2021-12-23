@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Outfit:wght@300;400;600&family=Poppins:wght@400;600&display=swap');
+
+:root {
+  --heading: 'Poppins', sans-serif;
+  --body: 'Open Sans', sans-serif;
+  --violet: hsl(257, 40%, 49%);
+  --soft-magenta: hsl(300, 69%, 71%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 2rem;
+  font-family: var(--body);
+  background: url(./images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--violet);
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.logo {
+  margin-bottom: 5rem;
+}
+.container {
+  margin: auto;
+  max-width: 100%;
+  width: 1500px;
+}
+img {
+  max-width: 100%;
+}
+.flex {
+  display: flex;
+}
+.flex > div {
+  flex: 1;
+}
+.flex > div:first-child {
+  margin-right: 0.5rem;
+}
+.flex > div:last-child {
+  margin-left: 0.5rem;
+}
+.huddle-info h1 {
+  font-family: var(--heading);
+}
+.huddle-info p {
+  margin-top: 1rem;
+  font-weight: 400;
+}
+
+.register-btn {
+  margin: 1.25rem 0 2rem 0;
+  background: white;
+  color: var(--violet);
+  padding: 1rem 5rem;
+  border-radius: 10rem;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  font-weight: 600;
+  transition: all 0.1s ease-in-out;
+  font-size: 1rem;
+  border: none;
+}
+.register-btn:hover {
+  background: var(--soft-magenta);
+  color: white;
+}
+
+.footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 1rem;
+  }
+  .flex {
+    flex-direction: column;
+    margin: 2rem;
+  }
+  .flex > div:first-child {
+    flex: 1;
+    margin-right: 0;
+  }
+  .flex > div:last-child {
+    flex: 1;
+    margin-left: 0rem;
+    text-align: center;
+  }
+  .footer ul {
+    justify-content: center;
+  }
+}
+.footer a {
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 1rem;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  text-decoration: none;
+}
+.footer a:hover {
+  border-color: var(--soft-magenta);
+  color: var(--soft-magenta);
+}
+
+/* .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+} */
