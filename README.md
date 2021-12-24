@@ -2,13 +2,7 @@
 
 ![Design preview for the Huddle landing page with single introductory section](./images/desktop-preview.jpg)
 
-## Welcome! 👋
-
-Thanks for checking out this front-end coding challenge.
-
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
-
-## The challenge
+## [The challenge](https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0)
 
 Your challenge is to build out this landing page from the designs provided in the starter code.
 
